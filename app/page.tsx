@@ -1,17 +1,17 @@
 "use client"
 
 import { useEffect } from "react"
-import Layout from "../src/components/Layout"
-import Hero from "../src/components/Hero"
-import Services from "../src/components/Services"
-import WhyChoose from "../src/components/WhyChoose"
-import About from "../src/components/About"
-import Careers from "../src/components/Careers"
-import CTA from "../src/components/CTA"
-import Footer from "../src/components/Footer"
-import BackgroundEffects from "../src/components/BackgroundEffects"
-import { ContactProvider } from "../src/contexts/ContactContext"
-import { setupScrollReveal, setupRippleEffects, setupTiltEffects } from "../src/utils/animations"
+import Layout from "./components/Layout"
+import Hero from "./components/Hero"
+import Services from "./components/Services"
+import WhyChoose from "./components/WhyChoose"
+import About from "./components/About"
+import Careers from "./components/Careers"
+import CTA from "./components/CTA"
+import Footer from "./components/Footer"
+import BackgroundEffects from "./components/BackgroundEffects"
+import { ContactProvider } from "./contexts/ContactContext"
+import { setupScrollReveal, setupRippleEffects, setupTiltEffects } from "./utils/animations"
 
 export default function Page() {
   useEffect(() => {
