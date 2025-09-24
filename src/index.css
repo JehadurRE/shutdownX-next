@@ -1,0 +1,90 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&family=Space+Grotesk:wght@400;600;700&display=swap");
+
+:root {
+  --bg-grad: radial-gradient(1200px 800px at 80% -10%, rgba(124, 58, 237, 0.2), transparent 60%),
+    radial-gradient(800px 600px at -10% 20%, rgba(34, 211, 238, 0.18), transparent 55%),
+    radial-gradient(1200px 900px at 50% 120%, rgba(20, 184, 166, 0.16), transparent 65%);
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+/* Glass effect */
+.glass {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+/* Gradient text */
+.grad-text {
+  background: linear-gradient(90deg, #9b8cff, #22d3ee, #14b8a6, #7c3aed);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 14s linear infinite;
+}
+
+/* Reveal on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px) scale(0.98);
+  transition: opacity .8s ease, transform .8s ease;
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Parallax helper */
+.parallax {
+  will-change: transform;
+}
+
+/* 3D hover tilt */
+.tilt:hover {
+  transform: perspective(1000px) rotateX(var(--rx, 0)) rotateY(var(--ry, 0)) translateZ(6px);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#7c3aed, #22d3ee);
+  border-radius: 8px;
+}
+
+/* Ripple effect */
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(120px 120px at var(--x, 50%) var(--y, 50%), rgba(255, 255, 255, 0.15), transparent 40%);
+  opacity: 0;
+  transition: opacity .4s ease;
+}
+
+.ripple:hover:after {
+  opacity: 1;
+}
