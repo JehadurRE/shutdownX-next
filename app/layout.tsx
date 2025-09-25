@@ -6,9 +6,9 @@ import './globals.css'
 import './index.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.app',
+  title: 'ShutdownX - Next-Gen IT Solutions',
+  description: 'ShutdownX builds next-gen, AI-powered SaaS products with automation-first engineering and design excellence.',
+  generator: 'jehadurre',
 }
 
 export default function RootLayout({
