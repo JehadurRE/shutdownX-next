@@ -27,7 +27,7 @@ const Navigation: React.FC = () => {
     <header className="sticky top-0 z-40">
       <div className="mx-auto max-w-7xl px-5">
         <nav
-          className={`glass mt-4 mb-2 rounded-2xl px-5 py-3 flex items-center justify-between shadow-glow transition-all duration-300 ${
+          className={`glass  mb-2 rounded-2xl px-5 py-3 flex items-center justify-between shadow-glow transition-all duration-300 ${
             isScrolled ? "backdrop-blur-xl bg-white/10" : ""
           }`}
         >
